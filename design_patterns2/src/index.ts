@@ -1,22 +1,21 @@
-class Sorter {
-    constructor(public collection: number[]) {}
+import { Sorter } from "./Sorter";
+import { NumbersCollection } from "./NumbersCollection";
+import { CharactersCollection } from "./CharactersCollection";
+import { LinkedList } from "./LinkedList";
 
-    sort(): void {
-        const { length } = this.collection;
+const numbersCollection = new NumbersCollection([10, 3, -5, 0]);
+numbersCollection.sort();
+console.log(numbersCollection.data);
 
-        for (let i = 0; i < length; i++) {
-            for (let j = 0; j < length - i - 1; j++) {
+const charColl = new CharactersCollection('xaTba');
+charColl.sort();
+console.log(charColl.data);
 
-                if (this.collection[j] > this.collection[j + 1]) {
-                    const tmp = this.collection[j];
-                    this.collection[j] = this.collection[j+1];
-                    this.collection[j+1] = tmp;
-                }
-            }
-        }
-    }
-}
+const linkedList = new LinkedList();
+linkedList.add(500);
+linkedList.add(-10);
+linkedList.add(-3);
+linkedList.add(4);
 
-const sorted = new Sorter([10, 3, -5, 0]);
-sorted.sort();
-console.log(sorted);
+linkedList.sort();
+linkedList.print();
