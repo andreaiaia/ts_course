@@ -3,5 +3,23 @@
     "@types/faker": "^5.5.9",
     "@types/google.maps": "^3.48.0",
     "faker": "^5.5.3"
-  }
+  },
+  "name": "ts_course",
+  "description": "Repo for excerises of the Typescript Udemy course I'm following",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreaiaia/ts_course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreaiaia/ts_course/issues"
+  },
+  "homepage": "https://github.com/andreaiaia/ts_course#readme"
 }
