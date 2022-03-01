@@ -2,6 +2,7 @@
   "dependencies": {
     "@types/faker": "^5.5.9",
     "@types/google.maps": "^3.48.0",
+    "@types/node": "^17.0.21",
     "faker": "^5.5.3"
   },
   "name": "ts_course",

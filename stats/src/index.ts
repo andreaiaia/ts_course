@@ -1,12 +1,8 @@
-import fs from 'fs';
+import { MatchReader } from "./MatchReader";
+import { Summary } from "./Summary";
 
-const matches = fs
-    .readFileSync('football.csv', {
-        encoding: 'utf-8'
-    })
-    .split('\n')
-    .map((row: string): string[] => {
-        return row.split(',');
-    });
+const matchReader = MatchReader.fromCsv('football.csv');
+const summary = Summary.winsAnalyzesWithHtmlReport('Man United');
 
-console.log(matches);
+matchReader.load();
+summary.buildAndPrintReport(matchReader.matches);
