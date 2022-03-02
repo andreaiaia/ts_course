@@ -3,6 +3,7 @@
     "@types/faker": "^5.5.9",
     "@types/google.maps": "^3.48.0",
     "@types/node": "^17.0.21",
+    "axios": "^0.26.0",
     "faker": "^5.5.3"
   },
   "name": "ts_course",
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/andreaiaia/ts_course/issues"
   },
-  "homepage": "https://github.com/andreaiaia/ts_course#readme"
+  "homepage": "https://github.com/andreaiaia/ts_course#readme",
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
 }
