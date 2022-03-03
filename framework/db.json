@@ -1,3 +1,14 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": 1,
+      "name": "But everybody calls me Giorgio",
+      "age": 21
+    },
+    {
+      "name": "Giovanni Giorgio 2",
+      "age": 20,
+      "id": 2
+    }
+  ]
 }
